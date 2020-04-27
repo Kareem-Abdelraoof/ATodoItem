@@ -84,7 +84,9 @@ $(".list-group").on("submit", ".delete-form", function(event){
         type:"delete",
         toDo:toDo,
         success: function(data){
+            toDo.prev("#hide").remove();
             toDo.remove();
+            
         }
     })
 })
