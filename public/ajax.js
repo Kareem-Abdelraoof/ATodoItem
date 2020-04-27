@@ -88,3 +88,7 @@ $(".list-group").on("submit", ".delete-form", function(event){
         }
     })
 })
+$(".new-button").click(function(event){
+    $("#hide-new").toggle();
+})
+
